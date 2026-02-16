@@ -15,7 +15,7 @@ public class DesafioCalculadora {
         double num2 = entrada.nextDouble();
 
 
-        System.out.print("Informe a operação: ");
+        System.out.print("Informe á operação: ");
         String op = entrada.next();
 
 
