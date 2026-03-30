@@ -1,14 +1,17 @@
 package classe;
 
-import javax.swing.*;
-import java.time.LocalDate;
-
 public class Data {
 
     int dia;
     int mes;
     int ano;
 
+    Data() {
+//         dia = 1;
+//         mes = 1;
+//         ano = 1970;
+        this(1, 1, 1970);
+    }
 
     Data(int dia, int mes, int ano) {
         this.dia = dia;
@@ -16,20 +19,15 @@ public class Data {
         this.ano = ano;
     }
 
-    Data() {
-        int dia = 1;
-        int mes = 1;
-        int ano = 1970;
-    }
-
 
     String obterDataFormatada() {
-        return String.format("%d/%d/%d\n", dia, mes, ano);
+        final String formato = "%d/%d/%d";
+        return String.format(formato, this.dia, mes, ano);
     }
 
     void imprimirDataFormatada() {
-        System.out.println(obterDataFormatada());
-    }
 
+        System.out.println(this.obterDataFormatada());
+    }
 
 }

@@ -1,26 +1,20 @@
 package classe;
 
-import javax.swing.*;
-
 public class DataTeste {
+
     public static void main(String[] args) {
 
+        Data d1 = new Data();
+//        d1.ano = 2021;
 
-        Data data1 = new Data(12, 11, 2020);
+        var d2 = new Data(31, 12, 2020);
 
-        Data data2 = new Data();
+        String dataFormatada1 = d1.obterDataFormatada();
 
+        System.out.println(dataFormatada1);
+        System.out.println(d2.obterDataFormatada());
 
-        System.out.printf(data1.obterDataFormatada());
-        System.out.printf(data2.obterDataFormatada());
-
-
-       /* System.out.printf(data.obterDataFormatada());
-        System.out.printf(data2.obterDataFormatada());*/
-
-
-        /*data.imprimirDataFormatada();*/
+        d1.imprimirDataFormatada();
+        d2.imprimirDataFormatada();
     }
-
-
 }
