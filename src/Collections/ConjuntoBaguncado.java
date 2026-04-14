@@ -3,6 +3,8 @@ package Collections;
 import java.util.HashSet;
 import java.util.Set;
 
+
+@SuppressWarnings("ALL")
 public class ConjuntoBaguncado {
     public static void main(String[] args) {
         HashSet conjunto = new HashSet();
@@ -40,15 +42,12 @@ public class ConjuntoBaguncado {
         System.out.println(nums);
         System.out.println(conjunto);
 
-       // conjunto.addAll(nums); // União entre dois conjuntos
+        // conjunto.addAll(nums); // União entre dois conjuntos
         conjunto.retainAll(nums); // Interseção entre dois conjuntos
         System.out.println(conjunto);
 
         conjunto.clear();
         System.out.println(conjunto);
-
-
-
 
 
     }
